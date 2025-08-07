@@ -98,20 +98,24 @@
 //     { name: 'Alice', age: 32 }
 // ];
 
-type User = {
-    name: string;
-    age: number;
-};
+// type User = {
+//     name: string;
+//     age: number;
+// };
 
-let users: User[] = [
-    { name: 'Tom', age: 30 },
-    { name: 'Jack', age: 25 },
-    { name: 'Alice', age: 32 },
-];
+// let users: User[] = [
+//     { name: 'Tom', age: 30 },
+//     { name: 'Jack', age: 25 },
+//     { name: 'Alice', age: 32 },
+// ];
  
-type User = {
-    name: string;
-    age: number;
-};
+// type User = {
+//     name: string;
+//     age: number;
+// };
 
-let users: User[] = [{ name: 'Tom', age: '30' }]; //error
+// let users: User[] = [{ name: 'Tom', age: '30' }]; //error
+
+// let arrAny: any[];
+
+// arrAny = [123, 'TEXT', { name: 'Tom' }, [1, 2, 3]];

@@ -81,8 +81,11 @@
 
 // arrNumber = [1. 'Text'];
 
+// let matrix: number[][] = [[1, 2], [3, 4]];
 
+// let mixed: (number | string)[] = [1, 'two'];
 
+// let numbers: Array<number> = [1, 2, 3, 4, 5];
 
 // type User = {
 //     name: string;
@@ -94,3 +97,21 @@
 //     { name: 'Jack', age: 25 },
 //     { name: 'Alice', age: 32 }
 // ];
+
+type User = {
+    name: string;
+    age: number;
+};
+
+let users: User[] = [
+    { name: 'Tom', age: 30 },
+    { name: 'Jack', age: 25 },
+    { name: 'Alice', age: 32 },
+];
+ 
+type User = {
+    name: string;
+    age: number;
+};
+
+let users: User[] = [{ name: 'Tom', age: '30' }]; //error

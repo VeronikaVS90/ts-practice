@@ -119,3 +119,112 @@
 // let arrAny: any[];
 
 // arrAny = [123, 'TEXT', { name: 'Tom' }, [1, 2, 3]];
+
+// let notSure: any = 4;
+// notSure = 'maybe a string instead';
+// notSure = false;
+// notSure = {};
+
+// let num: number;
+
+// num = notSure;
+
+// let data: any = fetchData();
+
+// function fetchUserData(id: string, callback: (data: any) => void): void {
+//     // some request
+//     const responseData = { name: 'Tom' };
+
+//     callback(responseData);
+// }
+
+// // Use of the function
+// fetchUserData('123', (data) => {
+//     console.log(data.name); //there is no error even though name doesn't exist
+// });
+
+// let notSure: unknown = 4;
+// notSure = 'maybe a string instead';
+// notSure = false;
+
+// let num: number;
+
+// num = notSure;
+
+// function fetchUserData() {
+//     return 'Tom';
+// }
+
+// let userData: unknown = fetchUserData();
+// if (typeof userData === 'string') {
+//     console.log(userData.toUpperCase());
+// }
+
+// let tupleType: [string, boolean];
+// tupleType = ['hello', true]; //ok
+// tupleType = [true, hello]; //error
+// tupleType = ['hello', true, true]; //error
+
+// let tuple: [string, ...number[]];
+
+// tuple = ['hello', 42, 100, 200]; //ok
+
+// enum Role { ADMIN, USER };
+
+// const person = {
+//     role: Role.ADMIN,
+// };
+
+// if (person.role === Role.ADMIN) {
+//     console.log('Role: ', Role.ADMIN);
+// }
+
+// enum UserStatus {
+//     Active = 'ACTIVE',
+//     Inactive = 'INACTIVE',
+//     Banned = 'BANNED',
+// }
+// let status: UserStatus = UserStatus.Active;
+
+// const enum Test {
+//     A = 1,
+//     B = 2,
+// }
+
+// for (let item in Test) {
+//     console.log(item);
+// }
+
+// let mixedType: string | number | boolean;
+
+// function combine(param1: number | string, param2: number | string) {
+//     return param1 + param2; //error
+// }
+
+// type Employee = {
+//     name: string;
+//     id: number;
+// };
+
+// type Manager = {
+//     employees: Employee[];
+// }
+
+// type CEO = Employee & Manager;
+
+// const ceo: CEO = {
+//     name: 'Alice',
+//     id: 1,
+//     employees: [
+//         {
+//             name: 'Bob',
+//             id: 2,
+//         },
+//     ],
+// };
+
+// type OneOrTwo = 1 | 2;
+// let value: OneOrTwo;
+// value = 1;
+// value = 2;
+// value = 3; //error

@@ -108,7 +108,7 @@
 //     { name: 'Jack', age: 25 },
 //     { name: 'Alice', age: 32 },
 // ];
- 
+
 // type User = {
 //     name: string;
 //     age: number;
@@ -228,3 +228,204 @@
 // value = 1;
 // value = 2;
 // value = 3; //error
+
+// Return type
+// function greet(): string {
+//   return "Hello, world!";
+// }
+// let result = greet();
+
+// const greet = (): string => {
+//   return "Hello, world!";
+// };
+// let result = greet();
+
+// type User = {
+//   id: number;
+//   name: string;
+// };
+
+// const getUserNames = (users: User[]): string[] => {
+//   return users.map((user) => user.name);
+// };
+
+// const users: User[] = [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" },
+//   { id: 3, name: "Charlie" },
+// ];
+
+// let result = getUserNames(users);
+// console.log(result);
+
+// export { };
+
+// Void
+// function logMessage(message: string): void {
+//     console.log(message);
+// }
+
+// logMessage('Hello, world!';
+// )
+// export { };
+
+// Never
+// function throwError(message: string): never {
+//   throw new Error(message);
+// }
+
+// function infiniteLoop(): never {
+//     while (true) {}
+// }
+// export { };
+
+// Function Type
+// let myFunc: (firstArg: string, secondArg: number) => void;
+// myFunc = (first: string, second: number) => {
+//     console.log(`First: ${first}, Second: ${second}`);
+
+// };
+// myFunc('Hello', 42);
+// export { };
+
+// Custom Types
+// type User = {
+//     id: number;
+//     name: string;
+// }
+
+// const user: User = {
+//     id: 1,
+//     name: "Alice",
+// }
+
+// Optional parameters and properties
+// function greet(name?: string) {
+//     if (name) {
+//         return `Hello, ${name}!`;
+//     } else {
+//         return `Hello!`;
+//     }
+// }
+
+// console.log(greet('Alice'));
+// console.log(greet());
+// export { };
+
+// Interface and Type
+// interface Animal {
+//     name: string;
+// }
+
+// type Animal = {
+//     name: string;
+// }
+
+// interface Dog extends Animal {
+//     bark: string;
+// }
+
+// mix Interface and type
+// type Cat = {
+//     meow: () => string;
+// };
+
+// interface Dog {
+//     bark: () => string;
+// }
+
+// type DogOrCat = Dog | Cat;
+// type DogAndCat = Dog & Cat;
+
+// export { };
+
+// Interface for function
+// interface AddFunc {
+//     (n1: number, n2: number): number;
+// }
+
+// let add: AddFunc;
+
+// add = (n1: number, n2: number) => {
+//     return n1 + n2;
+// }
+
+// Advanced types
+//typeof
+
+// type ComplexType = string | number;
+
+// function combine(a: ComplexType, b: ComplexType) {
+//     if (typeof a === 'string' || typeof b === 'string') {
+//         return a.toString() + b.toString();
+//     }
+//     return a + b;
+// }
+
+// export { };
+
+// In
+// type Admin = {
+//   name: string;
+//   privileges: string[];
+// };
+
+// type Employee = {
+//   name: string;
+//   startDate: Date;
+// };
+
+// type AdminOrEmployee = Admin | Employee;
+
+// function printDetails(obj: AdminOrEmployee) {
+//   console.log(`Name: ${obj.name}`);
+
+//   if ("privileges" in obj) {
+//     console.log(`Privileges: ${obj.privileges.join(", ")}`);
+//   }
+
+//   if ("startDate" in obj) {
+//     console.log(`Start Date: ${obj.startDate}`);
+//   }
+// }
+
+// export {};
+
+// Instanceof
+// class Car {
+//     drive() {
+//         console.log('Driving a car...');
+//     }
+// }
+
+// class Truck {
+//     drive() {
+//         console.log('Driving a truck...');
+//     }
+
+//     loadCargo(amount: number) {
+//         console.log(`Loading cargo: ${amount}`);
+//     }
+// }
+
+// // Define your type
+
+// type Vehicle = Car | Truck;
+
+// // Create your instances
+// const carInstance = new Car();
+// const truckInstance = new Truck();
+
+// // Function to use vehicle
+// function useVehicle(vehicle: Vehicle) {
+//     vehicle.drive();
+
+//     if (vehicle instanceof Truck) {
+//         vehicle.loadCargo(1000);
+//     }
+// }
+
+// useVehicle(carInstance);
+// useVehicle(truckInstance);
+
+// export { };

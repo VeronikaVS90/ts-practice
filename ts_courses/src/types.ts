@@ -519,3 +519,54 @@
 // function identify<T>(arg: T): T {
 //     return arg;
 // }
+
+// function firstElement<T>(arr: T[]): T {
+//     return arr[0];
+// }
+
+// let numbers = [1, 2, 3, 4, 5];
+// let firstNum = firstElement(numbers);
+
+// let strings = ['a', 'b', 'c', 'd'];
+// let firstStr = firstElement(strings);
+
+// export { };
+
+// function merge(objA: object, objB: object) {
+//     return Object.assign(objA, objB);
+// }
+
+// const merged = merge({ name: 'Alisa' }, { age: 28 });
+
+// merged.name;
+
+// export { };
+
+// function merge<T, U>(objA: T, objB: U): T & U {
+//   return Object.assign({}, objA, objB);
+// }
+
+// const merged = merge({ name: "Alisa" }, { age: 28 });
+
+// merged.name;
+
+// export {};
+
+// type Person = {
+//     name: string;
+// };
+
+// type AdditionFields = {
+//     age: number;
+// }
+
+// function merge<T, U>(objA: T, objB: U): T&U {
+//     return Object.assign({}, objA, objB);
+// }
+
+// const merged = merge<Person, AdditionFields>({ name: 'Alisa' }, { age: 28 });
+// merged.name;
+
+// export { };
+
+// Extends

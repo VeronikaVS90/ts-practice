@@ -429,3 +429,93 @@
 // useVehicle(truckInstance);
 
 // export { };
+
+// Type Casting (Type Conversion)
+// let someValue: unknown = 'this is a string';
+// let strLength1: number = (<string>someValue).length;
+// // or
+// let strLength2: number = (someValue as string).length;
+// let strLength3: number = someValue.length;
+
+// export { };
+
+// Casting for HTMLElement
+// const input = <HTMLInputElement>document.getElementById('inputEmail');
+// input.value = 'test@test.ts';
+// export { };
+// // or
+// const input = document.getElementById('inputEmail') as HTMLInputElement;
+// input.value = 'test@test.ts';
+
+// export { };
+
+// const input = document.getElementById('inputEmail');
+
+// if (input) {
+//     (input as HTMLInputElement).value = 'test@test.ts';
+// }
+
+// export { };
+
+// Index Properties
+// type IndexType = {
+//     [prop: string]: string;
+// }
+
+// type Person = {
+//     name: string;
+//     [x: string]: string;
+// };
+
+// const user: Person = {
+//     name: 'Alex',
+//     gender: 'MAN',
+//     country: 'Ukraine',
+// };
+
+// export { };
+
+// type User = {
+//     id: string;
+//     name: string;
+//     email: string;
+// };
+
+// type Users = {
+//     [id: string]: User;
+// };
+
+// let users = Users = {};
+
+// let user: User = {
+//     id: '1',
+//     name: 'Alex',
+//     email: 'alex@example.com',
+// };
+
+// users[user.id] = user;
+
+// export { };
+
+// Generics
+// let arr: Array<string | number> = [];
+// arr = ['str', 10, true];
+
+// export { };
+
+// const promise: Promise<string> = new Promise((resolve) => {
+//     setInterval(() => {
+//         resolve('Done!');
+//     }, 1000);
+// });
+
+// promise.then((data) => {
+//     console.log(data);
+// });
+
+// export { };
+
+// Generic function/method
+// function identify<T>(arg: T): T {
+//     return arg;
+// }

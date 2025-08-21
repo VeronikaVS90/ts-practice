@@ -570,3 +570,35 @@
 // export { };
 
 // Extends
+// function merge<T extends object, U extends object>(objA: T, objB: U) {
+//     return Object.assign(objA, objB);
+// }
+
+// const merged = merge({ name: 'Alisa' }, 'TEXT');
+
+// merged.name;
+
+// export { };
+
+// type Length = {
+//     length: number;
+// };
+
+// function getLength<T extends Length>(str: T) {
+//     return str.length;
+// }
+
+// getLength('text');
+// getLength([1, 2, 3]);
+// getLength(100); //Error
+
+// export { };
+
+// function arrayLogger<T extends Array<string>>(array: T): void {
+//   array.forEach((item) => console.log(item));
+// }
+
+// arrayLogger(["Hello", "World"]);
+// arrayLogger([1, 2, 3]); //Error
+
+// export {};

@@ -1,4 +1,4 @@
-// special types
+// special types: any, unknown, never, void
 // any
 // let value: any;
 // value = 5;
